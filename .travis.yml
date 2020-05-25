@@ -4,7 +4,7 @@ node_js:
   - 10 # use nodejs v10 LTS
 branches:
   only:
-    - master # build master branch only
+    - hexo # build master branch only
 before_install:
   - cd blog
   - npm install hexo-cli -g
@@ -13,10 +13,10 @@ script:
   - hexo clean
   - hexo generate # generate static files
 deploy:
-  provider: pages
+  provider: master
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
   on:
-    branch: master
+    branch: hexo
   local-dir: blog/public
