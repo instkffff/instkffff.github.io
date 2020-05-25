@@ -72,4 +72,4 @@ window.addEventListener('DOMContentLoaded', () => {
 // mathjax
 MathJax = {
   tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-};
+}
