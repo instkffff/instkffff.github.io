@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: 2020-05-23 22:56:59
-photos: https://rarity.coding.net/p/NightCandle_online/d/Picture_Storge/git/raw/master/picture/Pirates'_ship_raises_its_rainbow-colored_sails_MLPTM.webp
+photos: https://gitee.com/NightCandle/personal_album/raw/master/picture/Pirates'_ship_raises_its_rainbow-colored_sails_MLPTM.webp
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
