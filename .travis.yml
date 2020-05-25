@@ -1,0 +1,22 @@
+sudo: false
+language: node_js
+node_js:
+  - 10 # use nodejs v10 LTS
+branches:
+  only:
+    - master # build master branch only
+before_install:
+  - cd blog
+  - npm install hexo-cli -g
+  - npm install
+script:
+  - hexo clean
+  - hexo generate # generate static files
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch: master
+  local-dir: blog/public
