@@ -35,7 +35,7 @@ _This is italic text_
 ## Blockquotes
 
 
-> Blockquotes can also be nested...
+> **Blockquotes can also be nested...**
 >> ...by using additional greater-than signs right next to each other...
 > > > ...or with spaces between arrows.
 
@@ -58,9 +58,6 @@ Ordered
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
 
 Start numbering with offset:
 
@@ -89,11 +86,59 @@ Sample text here...
 Syntax highlighting
 
 ``` js
-var foo = function (bar) {
-  return bar++;
-};
+const {Telegraf} = require('telegraf')
 
-console.log(foo(5));
+const bot = new Telegraf('1241205900:AAHtYBYjWpDmAnzrIwh-P8EDrn6YQ9zrHqM')
+
+const fs = require('fs')
+
+const text2png = require('text2png')
+
+const forever = require('forever-monitor')
+
+const child = new (forever.Monitor)('serve.js', {
+	slient: true
+})
+
+child.start()
+
+//bot
+bot.on('inline_query', async({ inlineQuery, answerInlineQuery }) => {
+	
+	try {
+		let img = text2png (inlineQuery.query,{
+			textColor: 'white',
+			localFontPath:'./Triglavian.otf', 
+			localFontName: 'Triglavian',
+			font: '30px Triglavian', 
+			lineSpacing:5, 
+			xpadding:5, 
+			ypadding:5, 
+			backgroundColor: '#222c36'
+		})
+		fs.writeFileSync(`./tmp/${inlineQuery.query}.png` ,img)
+
+		let url = `https://triglavian-telegram.herokuapp.com/${inlineQuery.query}.png`
+		results = [{
+			type: 'photo',
+			id: 1,
+			thumb_url: encodeURI(url),
+			photo_url: encodeURI(url)
+		}]
+		return answerInlineQuery(results,{ cache_time: 0})
+
+	} catch(error) {
+		results = [{
+			type: 'photo',
+			id: 1,
+			thumb_url: 'https://triglavian-telegram.herokuapp.com/Triglavian.png',
+			photo_url: 'https://triglavian-telegram.herokuapp.com/Triglavian.png'
+		}]
+		return answerInlineQuery(results,{ cache_time: 0})
+	}	
+})
+
+bot.launch()
 ```
 
 ## Tables
@@ -130,5 +175,8 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 ## Math
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+
+
 
 
