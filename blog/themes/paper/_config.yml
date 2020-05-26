@@ -5,7 +5,6 @@ language: zh
 # main menu navigation
 menu:
   Home: /
-  About: /about
 
 # stylesheets loaded in the <head>
 stylesheets:

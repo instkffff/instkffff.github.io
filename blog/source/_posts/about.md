@@ -3,11 +3,12 @@ title: About
 date: 2020-05-24 22:27:15
 tags: [关于,创作者]
 categories: About
+photos: https://i.loli.net/2020/05/26/MbIUemCaOWprNnl.gif
 ---
 
-## About
+# About
 
-### About this site
+## About this site
 
 由于某些原因，本站在本阶段临时使用，未来会更新为功能和特效更好的个人网站来达到更优秀的效果。
 
@@ -19,7 +20,7 @@ categories: About
 
 我个人感觉，目前网站风格很简洁清楚，比较美观。
 
-### Ref
+## Ref
 
 Author : NightCandle
 Theme in use : https://randomyang.top/

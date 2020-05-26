@@ -22,7 +22,9 @@ include ../mixins/horizontalLine.pug
   div.text_warp
     p.text
        a(class={active: getLocation() !== 'Home'} href='/') Home
-       a(class={active: getLocation() !== 'About'} href='/about') About
+       a(class={active: getLocation() !== 'Category: 闲聊'} href='/categories/闲聊/') 闲聊
+       a(class={active: getLocation() !== 'About'} href='/2020/05/24/about/') About
+
 
   include ./switch-button
   .line-3
