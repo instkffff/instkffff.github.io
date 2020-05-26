@@ -46,5 +46,5 @@ comment:
   appKey: R3yDLDvwOoagPzxudAFiRtwa
   placeholder: say something
   notify: false
-  verify: false
+  verify: true
   avatar: 
