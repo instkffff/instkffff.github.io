@@ -3,7 +3,7 @@ title: About
 date: 2020-05-24 22:27:15
 tags: [关于,创作者]
 categories: About
-photos: http://nightcandle.gitee.io/personal_album/picture/tenor.gif
+photos: https://nightcandle.gitee.io/personal_album/picture/tenor.gif
 ---
 
 # About
@@ -16,7 +16,7 @@ photos: http://nightcandle.gitee.io/personal_album/picture/tenor.gif
 
 评论系统不准备支持，因为如果自建安全性不好，联网的国内服务商随时关，海外被墙。
 
-![twilight](http://nightcandle.gitee.io/personal_album/picture/tenor.gif)
+![twilight](https://nightcandle.gitee.io/personal_album/picture/tenor.gif)
 
 我个人感觉，目前网站风格很简洁清楚，比较美观。
 
