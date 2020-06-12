@@ -2,7 +2,7 @@
 title: 中文标题测试
 date: 2020-05-24 22:59:47
 tags: [Test,测试]
-categories: UI
+categories: 
 photos: https://giffiles.alphacoders.com/707/70785.gif
 ---
 
