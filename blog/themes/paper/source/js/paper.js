@@ -25,9 +25,7 @@ Darkmode.prototype.turnOnDarkmode = function() {
 
   //#6da051
   //change logo
-  document.querySelector('#logo').setAttribute('src','https://nightcandle.gitee.io/personal_album/picture/logo_dark_%E7%94%BB%E6%9D%BF%201%20%E5%89%AF%E6%9C%AC.png')
-
-  url = 'https://nightcandle.gitee.io/personal_album/picture/logo_dark_%E7%94%BB%E6%9D%BF%201%20%E5%89%AF%E6%9C%AC.png'
+  document.querySelector('#logo').setAttribute('src','https://nightcandle.gitee.io/personal_album/picture/logo_dark.png')
 
   let hoverShadow = '.switch-button label:after {background: #6da051;} img {filter: invert(100%)} article.post-view__article .article__content a:hover {box-shadow: inset 0 -0.8em 0 #6da051;}.sidebar__link a:hover, .sidebar__archives a:hover, .sidebar__categories a:hover, .sidebar__tags a:hover {box-shadow: inset 0 -0.8em 0 #6da051;}.tocbot .is-active-link::before {background: #6da051;}.sidebar__link, .sidebar__archives, .sidebar__categories, .sidebar__tags {border-left: 2px solid #6da051;} .location-bar .text .active:hover {box-shadow: inset 0 -0.8em 0 #6da051;}.location-bar .text .active {box-shadow: inset 0 -0.3em 0 #6da051;} .posts-item:hover h2 a {box-shadow: inset 0 -0.8em 0 #6da051} .posts-item__title a {box-shadow: inset 0 -0.3em 0 #6da051;}'  
   let style = document.createElement('style');
@@ -48,7 +46,7 @@ Darkmode.prototype.turnOffDarkmode = function() {
   // invertImgs(this.imgs)
   this.metaThemeColor.content = this.metaThemeColorCatch
   document.getElementById('DarkMode').remove()
-  document.querySelector('#logo').setAttribute('src','https://nightcandle.gitee.io/personal_album/picture/logo_%E7%94%BB%E6%9D%BF%201.png')
+  document.querySelector('#logo').setAttribute('src','https://nightcandle.gitee.io/personal_album/picture/logo_light.png')
 }
 
 window.addEventListener('DOMContentLoaded', () => {
