@@ -7,8 +7,6 @@ const invertImgs = (function() {
   return invertImgs
 })()
 
-
-
 function Darkmode() {
   this.mask = document.getElementById('darkmode-mask')
   this.imgs = document.getElementsByTagName('img')
