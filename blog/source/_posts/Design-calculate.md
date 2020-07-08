@@ -83,6 +83,44 @@ photos: https://nightcandle.gitee.io/personal_album/picture/1_q5Go60AJCvjJan7Yl9
 | 5.7" | 2.44x5.15 | 19:9 | 1080x2280 | 389x822dp | 444 | XXHDPI |
 
 
+## 原理
+
+我们也要学习一下计算原理。
+![](https://nightcandle.gitee.io/personal_album/picture/dpidp.png)
+*图例*
+
+### Screen Dimensions 屏幕宽高
+
+这个就是简单的勾股定理。
+
+
+> 设斜边像素长度为l
+  $$ l = \sqrt{6px^2+8px^2} = 10px $$ 
+  再根据比例算出长宽的英寸
+  $$ {height \over 8px} = {width \over 6px} = {5" \over 10px} $$
+  $$ width = {3"} , height = {4"}$$
+
+### dp Resolution dp尺寸
+
+首先我要解释一个概念，就是[**dpi**](https://zh.wikipedia.org/wiki/%E6%AF%8F%E8%8B%B1%E5%AF%B8%E7%82%B9%E6%95%B0)。
+如链接文中所述dpi就是在每一个英寸见方内的取样点数。这个dpi越高，显示也就越精细。
+
+然后就是dp的概念[**screendensities**](https://developer.android.com/training/multiscreen/screendensities)
+dp的基准单位是160dpi，这个是根据基准密度决定的，在这个设备上1px=1dp，但是你的设备可能比较好或者比较差，这个dpi可能不一致。造成dp的长度（设备物理）和显示长度px有所差异。我们用dp作为设计单位，更为精确且能适配更多屏幕。
+
+你可以试着想象一下，如果你的屏幕dpi很大，px很小，你如果用px进行设计，图就会比我们的基准屏幕160dpi的要大，这样我们的ui就无法去适应各种屏幕。于是我们用dpi比值来把像素转换成我们的屏幕物理单位，来保证设计的匹配。
+
+例如我的示例中，每英寸内只有16dpi。这样我们把px转换为dp。
+
+> $$ 4px = {dp-height ・ {16dpi \over 160dpi}} $$
+  $$ 3px = {dp-width ・ {16dpi \over 160dpi}} $$
+  $$ dp-height = 40dp , dp-width = 30dp $$
+
+这样我们就可以用这个尺寸进行跨设备设计了。
+
+
+
+
 
 
 
