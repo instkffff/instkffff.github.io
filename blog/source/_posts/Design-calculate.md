@@ -20,7 +20,7 @@ photos: https://nightcandle.gitee.io/personal_album/picture/1_q5Go60AJCvjJan7Yl9
 
 | Screen Diagonal | Screen Dimensions | Aspect Ratio | Pixel Resolution | dp Resolution | dpi | Density Bucket | 
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| 屏幕尺寸 | 宽高 | 比例 | 像素尺寸 | dp尺寸 | 像素密度 | 适配 |
+| 屏幕尺寸 | 宽高 | 比例 | 像素尺寸 | dp尺寸 | 点密度 | 适配 |
 
 ## 计算
 
