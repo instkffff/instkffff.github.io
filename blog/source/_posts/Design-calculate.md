@@ -112,9 +112,9 @@ dp的基准单位是160dpi，这个是根据基准密度决定的，在这个设
 
 例如我的示例中，每英寸内只有16dpi。这样我们把px转换为dp。
 
-> $$ 4px = {dp-height ・ {16dpi \over 160dpi}} $$
-  $$ 3px = {dp-width ・ {16dpi \over 160dpi}} $$
-  $$ dp-height = 40dp , dp-width = 30dp $$
+> $$ 4px = {dpHeight ・ {16dpi \over 160dpi}} $$
+  $$ 3px = {dpWidth ・ {16dpi \over 160dpi}} $$
+  $$ dpHeight = 40dp , dpWidth = 30dp $$
 
 这样我们就可以用这个尺寸进行跨设备设计了。
 
