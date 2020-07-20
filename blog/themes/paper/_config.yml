@@ -41,7 +41,7 @@ main_color: NightCandle # forest | grass | sky | sun | sea | default | NightCand
 
 # commend module
 comment:
-  enable: true
+  enable: false
   appId: gCDQYqpdRPLt6gik2cBI8hbI-gzGzoHsz
   appKey: R3yDLDvwOoagPzxudAFiRtwa
   placeholder: say something
